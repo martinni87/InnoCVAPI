@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		5BB3567528E0E7F500BB101E /* InnoCVAPIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB3567428E0E7F500BB101E /* InnoCVAPIApp.swift */; };
-		5BB3567728E0E7F500BB101E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB3567628E0E7F500BB101E /* ContentView.swift */; };
+		5BB3567728E0E7F500BB101E /* UsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB3567628E0E7F500BB101E /* UsersView.swift */; };
 		5BB3567928E0E7F600BB101E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BB3567828E0E7F600BB101E /* Assets.xcassets */; };
 		5BB3567C28E0E7F600BB101E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BB3567B28E0E7F600BB101E /* Preview Assets.xcassets */; };
+		5BB3568328E0E82700BB101E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB3568228E0E82700BB101E /* User.swift */; };
+		5BB3568528E0EAD100BB101E /* UsersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB3568428E0EAD100BB101E /* UsersModel.swift */; };
+		5BB3568B28E0FD6900BB101E /* DetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB3568A28E0FD6900BB101E /* DetailedView.swift */; };
+		5BB3568F28E10DD200BB101E /* UserActionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB3568E28E10DD200BB101E /* UserActionsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5BB3567128E0E7F500BB101E /* InnoCVAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InnoCVAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BB3567428E0E7F500BB101E /* InnoCVAPIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InnoCVAPIApp.swift; sourceTree = "<group>"; };
-		5BB3567628E0E7F500BB101E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5BB3567628E0E7F500BB101E /* UsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersView.swift; sourceTree = "<group>"; };
 		5BB3567828E0E7F600BB101E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BB3567B28E0E7F600BB101E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5BB3568228E0E82700BB101E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5BB3568428E0EAD100BB101E /* UsersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersModel.swift; sourceTree = "<group>"; };
+		5BB3568A28E0FD6900BB101E /* DetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedView.swift; sourceTree = "<group>"; };
+		5BB3568E28E10DD200BB101E /* UserActionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserActionsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +60,8 @@
 			isa = PBXGroup;
 			children = (
 				5BB3567428E0E7F500BB101E /* InnoCVAPIApp.swift */,
-				5BB3567628E0E7F500BB101E /* ContentView.swift */,
+				5BB3568728E0F0CE00BB101E /* ViewController */,
+				5BB3568628E0F0B100BB101E /* Model */,
 				5BB3567828E0E7F600BB101E /* Assets.xcassets */,
 				5BB3567A28E0E7F600BB101E /* Preview Content */,
 			);
@@ -65,6 +74,25 @@
 				5BB3567B28E0E7F600BB101E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5BB3568628E0F0B100BB101E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5BB3568428E0EAD100BB101E /* UsersModel.swift */,
+				5BB3568228E0E82700BB101E /* User.swift */,
+				5BB3568E28E10DD200BB101E /* UserActionsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5BB3568728E0F0CE00BB101E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5BB3567628E0E7F500BB101E /* UsersView.swift */,
+				5BB3568A28E0FD6900BB101E /* DetailedView.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +165,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BB3567728E0E7F500BB101E /* ContentView.swift in Sources */,
+				5BB3568F28E10DD200BB101E /* UserActionsModel.swift in Sources */,
+				5BB3568528E0EAD100BB101E /* UsersModel.swift in Sources */,
+				5BB3567728E0E7F500BB101E /* UsersView.swift in Sources */,
+				5BB3568B28E0FD6900BB101E /* DetailedView.swift in Sources */,
+				5BB3568328E0E82700BB101E /* User.swift in Sources */,
 				5BB3567528E0E7F500BB101E /* InnoCVAPIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
